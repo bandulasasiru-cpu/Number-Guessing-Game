@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💟Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+        <div class="logo"> 🎯 Guess<span>Master</span>
+        </div>
+
+    </nav>
+
+    <div class="game-container">
+        <div class="game-icon">🎯</div>
+
+        <h1>Number Guessing Game</h1>
+
+        <p class="description"> Guess the secret number between
+            <span>1 and 10</span>.Let's see if you can win!
+        </p>
+
+        <div class="number-box">
+            <h2>?</h2>
+        </div>
+
+        <label for="guessNumber">Enter Your Guess</label>
+        <input type="number" id="guessNumber" placeholder="Enter a number (1-10)" min="1" max="10">
+        <button onclick="checkGuess()">Check My Guess 🚀</button>
+        <div id="result"></div>
+
+        <div id="history-container">
+            <h3>Guess History</h3>
+            <div id="historyList"></div>
+        </div>
+
+        <p class="footer-text">✨ Good luck! You can do it!</p>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
